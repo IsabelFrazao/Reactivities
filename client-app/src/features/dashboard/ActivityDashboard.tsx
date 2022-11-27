@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Grid } from 'semantic-ui-react';
-import { useStore } from "../../../app/stores/store";
-import ActivityList from "../ActivityList";
+import { useStore } from "../../app/stores/store";
+import ActivityList from "../activities/ActivityList";
 import { observer } from 'mobx-react-lite';
-import LoadingComponent from "../../../app/layout/LoadingComponents";
+import LoadingComponent from "../../app/layout/LoadingComponents";
 import ActivityFilters from "./ActivityFilters";
 
 export default observer(function ActivityDashboard() {

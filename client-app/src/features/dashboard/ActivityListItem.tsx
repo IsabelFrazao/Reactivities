@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Icon, Item, ItemHeader, Segment } from 'semantic-ui-react';
-import { Activity } from "../../../app/models/activity";
+import { Activity } from "../../app/models/activity";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -26,7 +26,7 @@ export default function ActivityListItem({activity}: Props) {
             <Segment>
                 <span>
                     <Icon name='clock' /> {activity.date}
-                    <Icon name='marker' /> {activity.venue}
+                    <Icon name='marker' /> {activity.venue} 
                 </span>
             </Segment>
             <Segment secondary>
