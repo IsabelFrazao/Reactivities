@@ -74,7 +74,3 @@ const agent = {
 }
 
 export default agent;
-
-function useToast(): { toast: any; } {
-    throw new Error("Function not implemented.");
-}
