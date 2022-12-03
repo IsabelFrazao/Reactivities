@@ -1,16 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
-using Persistence;
 using System.Threading.Tasks;
-using System.Collections.Generic;
 using Domain;
-using Microsoft.EntityFrameworkCore;
 using System;
 using Application.Activities;
-using System.Threading;
 using Microsoft.AspNetCore.Authorization;
 
 namespace API.Controllers
 {
+    [AllowAnonymous]
     public class ActivitiesController : BaseAPIController
     {
         [HttpGet]
